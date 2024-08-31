@@ -2,6 +2,14 @@
   "name": "react-ts",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint \"src/**/*.{ts,js,tsx}\" && prettier --check \"src/**/*.{ts,js,tsx}\"",
+    "lint:fix": "eslint \"src/**/*.{ts,js,tsx}\" --fix && prettier --write \"src/**/*.{ts,js,tsx,scss}\""
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -16,17 +24,16 @@
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.3.0",
+    "@typescript-eslint/parser": "^8.3.0",
+    "eslint": "^8.57.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jest": "^28.8.1",
+    "eslint-plugin-react-refresh": "^0.4.11",
+    "eslint-plugin-unused-imports": "^4.1.3",
+    "prettier": "^3.3.3"
   },
   "browserslist": {
     "production": [
